@@ -1,0 +1,7 @@
+provider:
+    name: aws
+    ecr:
+        # In this section you can define images that will be built locally and uploaded to ECR
+        images:
+            appimage:
+                path: ./

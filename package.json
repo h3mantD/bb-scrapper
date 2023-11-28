@@ -1,0 +1,24 @@
+{
+  "name": "bb-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h3mantD/bb-scrapper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h3mantD/bb-scrapper/issues"
+  },
+  "homepage": "https://github.com/h3mantD/bb-scrapper#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.5.2"
+  }
+}
