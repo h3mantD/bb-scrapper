@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  headless-chrome:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: headless-chrome
+    ports:
+      - "3000:3000"
+    volumes:
+      - '.:/usr/src/app'
+
