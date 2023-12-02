@@ -9,16 +9,14 @@ app.use(express.urlencoded({ extended: false }));
 const delay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 let stats = null;
 
-app.post("/hello", async (req, res) => {
-    console.log("Getting the stats");
+app.post("/get-stats", async (req, res) => {
     let username = req.body.username;
     let platform = req.body.platform;
     res.status(200).send((await getBBStat(username, platform)) ?? (await stats));
-    console.log("Screenshot taken");
 });
 
-app.listen(3000, () => {
-    console.log("Listening on port 3000");
+app.listen(80, () => {
+    console.log("Listening on port 80");
 });
 
 let stat = null;
